@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	height: 100%;	
+}
+
+html * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: #F8FF00;
+}
+
+
+.nav {
+	text-align: left;
+	text-transform: uppercase ;
+	background: #000;
+	display: block;
+	width: 200px;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	position: fixed;
+	color: #fff
+	
+}
+
+#sidebar, .canvas{
+	position: relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+.nav ul{
+	list-style-type:none;
+	margin-bottom: 20px;
+}
+
+.nav ul li a {
+	display: block;
+	border-bottom: 2px solid #AEB7B3;
+	text-decoration:none;
+	list-style:none;
+	background-color: #262626;
+	padding: 6px;
+	font-size:20px;
+}
+
+#social {
+	text-align: center;
+}
+
+#name{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 12px;
+	margin-left: 0px;
+	
+}
+
+.content {
+	height: 50%;
+	background-color: #6b3d02;
+}
+
+#createSect{
+	height: 75%;
+}
+
+.image{
+	height: 100%;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+.img1 {
+	background-image: url(image1.jpg)
+}
+
+.img2 {
+	background-image:url(image2.jpg)
+}
+
+.img3 {
+	background-image:url(image3.jpg)
+}
+
+
+#welcome, #random{
+	left: 100px;
+	text-align: center;
+	position: relative;
+	top:50%;
+	color: #FFFFFF;
+}
+
+.content{
+	margin-left:200px;
+}
+
+th {
+	color: #fff;
+	text-align: left;
+	}
+
+p{
+	margin-top: 45px;
+}
+
+.swot{
+	margin-left: 25px;
+}
+
+img{
+	width: 200px;
+	height: 200px;
+}
+
+.canvas{
+	text-align:center;
+}
+
+h2{
+	color: #fff;
+	padding: 6px;
+}
