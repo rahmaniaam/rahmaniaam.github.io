@@ -1,78 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Rahmania Astrid Mochtar</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="index.css" rel="stylesheet" type="text/css">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
 </head>
-
 <body>
-    
-    <div class="nav">		<!--nav lebih fokus ke navigation box nya-->
-      <div id="sidebar">	<!--sidebar fokus ke content dari nav box nya-->
-        <ul>
-          <li><a href="#homeSect">Home</a></li>
-          <li><a href="#whoSect">Who Am I?</a></li>
-          <li><a href="#createSect">Creations</a></li>
-          
-          
-        </ul>
-         <div id="social">
-                <h1>Find me on</h1>
-                <a href="https://www.instagram.com/rahmaniaam/"><i class="fa fa-instagram fa-2x"></i></a>
-                <a href="https://www.facebook.com/public/Rahmania-Astrid-Mochtar"><i class="fa fa-facebook-square fa-2x"></i></a>
-                <a href="https://plus.google.com/112888287271582929234"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                <a href="https://www.youtube.com/channel/UC6MBm_T8xes_WyiBff79IQg"><i class="fa fa-youtube-play fa-2x"></i></a>
-          </div>
-          <p id="name">&copy Rahmania Astrid Mochtar</p>
-              
-       </div>
-    </div>
-	
-    <div id="homeSect" class="image img1">
-    	<h1 id="welcome">Welcome peeps!</h1>
-        <p id="random">see my weirdness from the convinience of your device</p>
-    </div>
-    <div id="whoSect" class="content">
-    	<h2>A young developer thirsting for new knowledge</h2>
-	<h4>Currently interested in Front-End Development and Data Science</h4>
-    </div>
-    
-<div class="image img2"></div>
-    <div class="content">
-   	  <table style="width:100%">
-        	<tr>
-            	<th><p class="swot">STRENGTH</p></th>
-                <th><p class="swot">Loyal, Selalu mencari kesibukan, Bisa bekerja sama, Mudah beradaptasi, Berkomitmen</p></th>
-            </tr>
-            <tr>
-            	<th><p class="swot">WEAKNESS</p></th>
-              <th><p class="swot">Stage fright, Kurang vocal, Pemalas, Suka menunda pekerjaan</p></th>
-            </tr>
-        	<tr>
-            	<th><p class="swot">OPPORTUNITIES</p></th>
-                <th><p class="swot">Ngekos, Tidak terikat waktu</p></th>
-            </tr>
-            <tr>
-            	<th><p class="swot">THREATS</p></th>
-                <th><p class="swot">Susah bangun pagi</p></th>
-            </tr>
-        </table>
-</div>
-    <div class="image img3"></div>
-    <div id="createSect" class="content">
-    	<h2>Look at my amatuer photo-editing skills!</h2>
-    	<div class="canvas">
-            <img src="final.png" width="510" height="451" alt=""/> 
-            <img src="shibaraniu.png" width="1181" height="781" alt=""/>
-            <img src="hmm.png" width="300" height="375" alt=""/>
-            <img src="yes.png" width="605" height="605" alt=""/>
-            <img src="ho.png" width="300" height="300" alt=""/>
-        </div>
-    </div>
-    
-    
-    	
+	<div id="front">
+		<span class="title-name">&lt;&nbsp;RAHMANIA ASTRID MOCHTAR&nbsp;/&gt;</span>
+	</div>
+	<div id="bg">
+		<div class="">
+			<div class="rect left">
+				<h2>education.</h2>
+				<div class="rect-in">
+					<span class="bolded">Universitas Indonesia.</span>
+					<br>
+					<span> Computer Science</span>
+					<br>
+					<span>(2016 - present)</span>
+					<br><br>
+
+					<span class="bolded">SMA Negeri 70 Jakarta.</span>
+					<br>
+					<span>(2013 - 2016)</span>
+					<br><br>
+
+					<span class="bolded">SMP Labschool Kebayoran.</span>
+					<br>
+					<span> (2010 - 2013)</span>
+				</div>
+				
+			</div>
+
+			<div class="rect center">
+				
+				<img class="resize-img black-white" src="./images/img1.jpg">
+
+			</div>
+
+			<div class="rect right">
+				<h2>profile.</h2>
+				<div class="rect-in">
+					<span>Female.</span>
+					<br><br>
+					<span>Based in</span><span class="bolded"> Jakarta, Indonesia.</span>
+					<br><br>
+					<span>Currently pursuing a degree in CS.</span>
+					<br><br>
+					<span>Unique human being with lots of coolness and a dash of weird.</span>
+				</div>
+			</div>
+
+			<br class="break">
+
+		</div>
+	</div>
+	<div id="end"></div>
+
+
+	<script src="./node_modules/baffle/dist/baffle.min.js"></script>
+	<script>
+	window.baffle;
+
+	const b = baffle('.title-name', {
+		characters: 'QWERTYUIOPASDFGHJKLZXCVBNM<>?":{}[]!@#$%^&*()_+1234567890-=',
+		speed: 40
+	});
+
+	console.log('cek');
+
+	</script>
+
 </body>
+
+
 </html>
