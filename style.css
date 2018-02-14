@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
-
+	letter-spacing: 1px;
 }
 
 a {
@@ -152,10 +152,6 @@ h2 {
 
 .container {
 	padding: 1.5rem 8rem;
-}
-
-.container > h2 {
-	font-size: 2rem;
 	margin-bottom: 3rem;
 }
 
@@ -177,4 +173,43 @@ h2 {
 .resize-img-2 {
 	position: relative;
 	width: 100%;
+}
+
+.creds-title {
+	text-align: center;
+	font-size: 3rem;
+
+  	animation: in 3s ease-out forwards;
+  	animation-delay: 1s;
+  	opacity: 0;
+}
+
+.creds-text {
+	text-align: center;
+	font-size: 2rem;
+
+	animation: in 3s ease-out forwards;
+  	animation-delay: 1s;
+  	opacity: 0;
+}
+
+.creds-text > span > a {
+	text-decoration: underline;
+}
+
+@keyframes in{
+	0% {
+    	letter-spacing: -17px;
+    	opacity: 0;
+  	}
+
+  	30%	{
+    	letter-spacing: 4px;
+    	opacity: 1;
+  	}
+
+  	100% {
+    	letter-spacing: 6px;
+    	opacity: 1;
+  	}
 }
