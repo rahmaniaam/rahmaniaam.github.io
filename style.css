@@ -85,15 +85,21 @@ h2 {
 
 .middle {
 	position: relative;
-	top: 35%;
+	top: 30%;
+	left: 5%;
+}
+
+.middle > h2 {
+	color: #fff;
+	padding: 2rem 4rem;
 }
 
 .logo {
 	float: left;
-	width: 12rem;
-	height: 12rem;
+	width: 11rem;
+	height: 11rem;
 	overflow: hidden;
-	padding: 2.5rem;
+	padding: 2rem;
 
 	-webkit-filter: grayscale(55%);
     filter: grayscale(55%);
