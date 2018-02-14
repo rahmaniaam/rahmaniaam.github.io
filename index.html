@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Aci's Portofolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<script src="./node_modules/baffle/dist/baffle.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 	<div id="front">
 		<span class="title-name">&lt;&nbsp;RAHMANIA ASTRID MOCHTAR&nbsp;/&gt;</span>
+		<span class="title-desc">FRONT-END DEVELOPER IN THE MAKING</span>
 	</div>
 	<div id="bg">
-		<div class="">
+		<div class="all-rect">
 			<div class="rect left">
 				<h2>education.</h2>
 				<div class="rect-in">
 					<span class="bolded">Universitas Indonesia.</span>
 					<br>
-					<span> Computer Science</span>
+					<span> Computer Science.</span>
 					<br>
 					<span>(2016 - present)</span>
 					<br><br>
@@ -42,33 +45,117 @@
 			<div class="rect right">
 				<h2>profile.</h2>
 				<div class="rect-in">
-					<span>Female.</span>
+					<span class="bolded">Female.</span>
+					<br><br>
+					<span><span class="bolded">19 years</span> old.</span>
 					<br><br>
 					<span>Based in</span><span class="bolded"> Jakarta, Indonesia.</span>
 					<br><br>
-					<span>Currently pursuing a degree in CS.</span>
+					<span>+6281315848727.</span>
 					<br><br>
-					<span>Unique human being with lots of coolness and a dash of weird.</span>
+					<span>rahmaniaam26@gmail.com.</span>
+					<br><br>
+					<span>www.linkedin.com/in/rahmaniaam</span>
 				</div>
 			</div>
 
 			<br class="break">
 
 		</div>
+
+		<div class="middle">
+
+			<div class="logo">
+				<img class="html" src="./images/img3.png">
+			</div>
+			<div class="logo">
+				<img class="css" src="./images/img4.png">
+			</div>
+			<div class="logo">
+				<img class="js" src="./images/img5.jpg">
+			</div>
+			<div class="logo">
+				<img class="python" src="./images/img6.png">
+			</div>
+			<div class="logo">
+				<img class="java" src="./images/img7.png">
+			</div>
+
+			<br class="break">
+
+		</div>
+
 	</div>
-	<div id="end"></div>
+
+	<div id="end">
+
+		<div class="container">
+			<h2 class="block-title">experiences.</h2>
+			<div class="block">
+				<div class="block-text">
+					<h3>foye-foye, front-end engineer</h3>
+					<span>Re-develop the new UI of a ticketing webapp for transportation and accomodation.</span>
+					<br><br>
+					<span>Project is still ongoing and not yet deployed.</span>
+				</div>
+				<div class="block-img">
+					<img class="resize-img-2" src="./images/img2.png">
+				</div>
+			</div>
+
+			<div class="block">
+				<div class="block-text">
+					<h3>keraci, front-end engineer + ui/ux designer</h3>
+					<span>Design and develop an e-commerce website for a new-small business.</span>
+					<br><br>
+					<span>Project is on hiatus.</span>
+				</div>
+				<div class="block-img">
+					<img class="resize-img-2" src="./images/img8.png">
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-	<script src="./node_modules/baffle/dist/baffle.min.js"></script>
+	
 	<script>
+
 	window.baffle;
 
-	const b = baffle('.title-name', {
-		characters: 'QWERTYUIOPASDFGHJKLZXCVBNM<>?":{}[]!@#$%^&*()_+1234567890-=',
+	const name = baffle('.title-name', {
+		characters: ' QWERTYUIOPASDFGHJKLZXCVBNM<>?":{}[]!+1234567890-=',
 		speed: 40
 	});
 
-	console.log('cek');
+	const desc = baffle('.title-desc', {
+		characters: ' QWERTYUIOPASDFGHJKLZXCVBNM<>?":{}[]!+1234567890-=',
+		speed: 40
+	});
+
+	name.start();
+	desc.start();
+	name.reveal(1500);
+	desc.reveal(1500,1000);
+
+
+
+	window.sr = ScrollReveal();
+	
+	sr.reveal('.left', {duration: 1200});
+	sr.reveal('.right', {duration: 1800});
+	sr.reveal('.center', {duration: 2600});
+	
+	sr.reveal('.html', {duration: 800});
+	sr.reveal('.css', {duration: 1200});
+	sr.reveal('.js', {duration: 1600});
+	sr.reveal('.python', {duration: 2000});
+	sr.reveal('.java', {duration: 2400});
+
+	sr.reveal('.block-title', {duration: 1200});
+	sr.reveal('.block', {duration: 1000});
+
+
 
 	</script>
 
