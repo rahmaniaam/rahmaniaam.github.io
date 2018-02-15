@@ -7,6 +7,15 @@
 
 \f0\fs24 \cf0 link tugas personal: rahmaniaam.github.io\
 \
+cara menjalankan di local server:\
+- install scrollreveal.js (melalui npm)\
+- buka index.html\
+- enjoy:)\
+\
+library yang digunakan:\
+- baffle.js\
+- scrollreveal.js\
+\
 sumber gambar:\
 - logo html5: https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png\
 \
