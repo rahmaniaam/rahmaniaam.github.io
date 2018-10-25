@@ -1,10 +1,18 @@
+@font-face {
+	font-family: 'Meslo';
+	src: url('meslo_lg_m_regular_for_powerline-webfont.woff2') format('woff2'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	url('meslo_lg_m_regular_for_powerline-webfont.woff2') format('woff2'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Meslo', sans-serif;
 	letter-spacing: 1px;
 	overflow-x: hidden;
 	display: inline-block;
+	background-color: #232628;
+	color: #fdee02;
 }
 
 a {
@@ -16,23 +24,19 @@ a {
     display: none; 
 }
 
-h2 {
-	text-decoration: underline;
-}
-
 #front {
 	position: relative;
-	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ 	align-items: center;
 	height: 100vh;
-	color: #fff;
 	text-align: center;
 }
 
 .title-name {
 	display: inline-block;
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 	font-size: 4rem;
 }
 
@@ -40,8 +44,6 @@ h2 {
 	display: inline-block;
 	position: relative;
 	font-size: 3rem;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 .all-rect {
@@ -51,8 +53,6 @@ h2 {
 	justify-content: center;
  	align-items: center;
  	align-content: flex-start;
-
- 	background-color: #000;
  	height: 100vh;
 }
 
@@ -61,11 +61,18 @@ h2 {
 	overflow: hidden;
 	height: 26rem;
 	width: 17rem;
-	background-color: #fff;
 	border-radius: 20px;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	padding: 2rem;
-	margin: 2rem ;
+	margin: 2rem;
+	color: #fdee02;
+	border: #828282 solid 1px; 
+	
+}
+
+.rect-header {
+	color: #000;
+	background-color: #828282;
 }
 
 .rect-in {
@@ -81,34 +88,38 @@ h2 {
 	justify-content: center;
  	align-items: center;
  	align-content: flex-start;
-
 	height: 100vh;
-	background: linear-gradient(#000, #fff 100%);
 	padding: 3rem;
 }
 
 .logo {
+	position: relative;
 	width: 11rem;
 	height: 11rem;
 	overflow: hidden;
 	padding: 2rem;
-
-	-webkit-filter: grayscale(55%);
-    filter: grayscale(55%);
 }
 
-.html {
-	position: relative;
+.normal-width-logo {
 	width: 100%;
 }
 
-.css {
+.nodejs {
 	position: relative;
-	width: 70%;
+	width: 150%;
+	top: -20%;
+	left: -20%;
+}
+
+.django {
+	width: 80%;
+}
+
+.css {
+	width: 75%;
 }
 
 .js {
-	position: relative;
 	width: 100%;
 }
 
@@ -116,11 +127,6 @@ h2 {
 	position: relative;
 	width: 180%;
 	left: -35%;
-}
-
-.java {
-	position: relative;
-	width: 100%;
 }
 
 .bolded {
@@ -135,12 +141,11 @@ h2 {
 }
 
 .black-white {
-	-webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+	-webkit-filter: grayscale(55%);
+    filter: grayscale(55%);
 }
 
 #end {
-	background: #fff;
 	height: 100%;
 }
 
