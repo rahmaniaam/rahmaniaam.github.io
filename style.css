@@ -42,7 +42,7 @@ a {
 
 .title-desc {
 	position: relative;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .all-rect {
@@ -57,7 +57,7 @@ a {
 .rect {
 	position: relative;
 	overflow: hidden;
-	height: 26rem;
+	height: 22rem;
 	width: 50%;
 	border-radius: 20px;
 	font-size: 1rem;
